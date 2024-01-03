@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        docker{
+        any{
             image 'docker:latest'
             args '--network docker_local'
         }
