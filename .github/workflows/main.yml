@@ -44,5 +44,5 @@ jobs:
 
       -  name: Run job jenkins
          run: |
-           curl -X POST -H "Content-type: application/json" -H "Content-Length: 1000" -H "Authorization: Bearer 11c1587acdc8dcab5e40895e07d6e56aeb" "http://jenkins.corp.liveramp.com/generic-webhook-trigger/invoke"
+           curl -X POST -H "Content-type: application/json" -H "Content-Length: 1000" "http://468c-189-203-150-209.ngrok-free.app/generic-webhook-trigger/invoke?token=liveramp"
           
