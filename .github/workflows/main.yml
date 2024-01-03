@@ -44,5 +44,5 @@ jobs:
 
       -  name: Run job jenkins
          run: |
-           curl -X POST -H "Content-type: application/json" -H "Content-Length:1000" "http://jenkins.corp.liveramp.com/generic-webhook-trigger/invoke?token=liveramp"
+           curl -X POST -H "Content-type: application/json" -H "Content-Length: 1000" "http://jenkins.corp.liveramp.com/generic-webhook-trigger/invoke?token=liveramp"
           
