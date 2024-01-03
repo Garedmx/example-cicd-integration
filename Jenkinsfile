@@ -18,8 +18,9 @@ pipeline{
         }
         stage ('Deploy'){
             steps{
-                sh "docker pull ghcr.io/garedmx/example-cicd-integration:latest"
-                sh "docker restart 379db1ceee97"
+                sh "docker.image(379db1ceee97).inside{
+                     pull ghcr.io/garedmx/example-cicd-integration:latest}"
+                sh "docker.image(379db1ceee97).inside{ restart 379db1ceee97}"
             }
         }
     }
