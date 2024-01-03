@@ -44,5 +44,5 @@ jobs:
 
       -  name: Run job jenkins
          run: |
-           curl -X POST -H "Content-type: application/json" "http://468c-189-203-150-209.ngrok-free.app/generic-webhook-trigger/invoke?token=liveramp"
+           curl --location --request POST 'http://468c-189-203-150-209.ngrok-free.app/generic-webhook-trigger/invoke?token=liveramp'
           
